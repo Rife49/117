@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <title>{% block title %}{% endblock title %}</title>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Custom Header-->
+    <header> 
+        <nav>
+            <h2> My Not So Done Projects</h2>
+            <ul>
+                <li> <a href="{% url 'about_me' %}">About Me</a></li>
+                <li> <a href="{% url 'experience' %}">My Skills Bro </a></li>
+                <li> <a href="{% url 'contact' %}">Contact</a></li>
+                <li> <a href="{% url 'projects' %}">Projects</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- Header ends -->
+    <main class="flex-grow-1">
+        {% block content %} {% endblock content %}
+    </main>
+    <footer class="mt-auto">
+        <div class="card text-center">
+            <div class="card-body">
+                <p class="card-title mb-0">
+                    ©Copyright is prohibited violaters will be prosecuted
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

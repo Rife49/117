@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+about me 
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <img src="{% static 'img/profile_pic.png' %}" alt="profile_pic">
+<div class="text">
+    <h1>Hello World</h1>
+        <p>Hello! My name is Rife, and I am currently learning full-stack web development with Django, HTML, CSS, and Bootstrap. <br>
+            I enjoy building websites and learning how both the front end and back end work together. My goal is to continue improving my <br> 
+            programming skills and eventually develop applications that solve real-world problems. I am excited to keep learning and growing as a developer.</p>
+<div class="skills">
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">Javascript</div>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Django</div>
+
+</div>
+</div>
+</div>
+
+
+{% endblock content %}
