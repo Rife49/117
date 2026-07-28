@@ -7,3 +7,4 @@ def projects(request):
     context = {'projects': projects_list}
     
     return render(request, 'projects/project_list.html', context)
+
